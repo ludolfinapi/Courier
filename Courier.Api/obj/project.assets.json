@@ -1,0 +1,99 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "Courier.core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/Courier.core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Courier.core.dll": {}
+        }
+      },
+      "Courier.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Courier.core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Courier.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Courier.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Courier.core/1.0.0": {
+      "type": "project",
+      "path": "../Courier.core/Courier.core.csproj",
+      "msbuildProject": "../Courier.core/Courier.core.csproj"
+    },
+    "Courier.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Courier.Infrastructure/Courier.Infrastructure.csproj",
+      "msbuildProject": "../Courier.Infrastructure/Courier.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v2.2": [
+      "Courier.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\x\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\x\\source\\repos\\Courier.core\\Courier.Api\\Courier.Api.csproj",
+      "projectName": "Courier.Api",
+      "projectPath": "C:\\Users\\x\\source\\repos\\Courier.core\\Courier.Api\\Courier.Api.csproj",
+      "packagesPath": "C:\\Users\\x\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\x\\source\\repos\\Courier.core\\Courier.Api\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\x\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp2.2"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "projectReferences": {
+            "C:\\Users\\x\\source\\repos\\Courier.core\\Courier.Infrastructure\\Courier.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\x\\source\\repos\\Courier.core\\Courier.Infrastructure\\Courier.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp2.2": {
+        "imports": [
+          "net461"
+        ],
+        "assetTargetFallback": true,
+        "warn": true
+      }
+    }
+  }
+}

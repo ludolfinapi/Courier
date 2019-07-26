@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Courier.Api\Courier.Api.csproj" />
+    <ProjectReference Include="..\Courier.Infrastructure\Courier.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
